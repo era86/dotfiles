@@ -14,6 +14,7 @@ Plugin 'The-NERD-Commenter'
 Plugin 'mileszs/ack.vim'
 Plugin 'fugitive.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'elixir-editors/vim-elixir'
 
 " Vundle Plugins END
 call vundle#end()
