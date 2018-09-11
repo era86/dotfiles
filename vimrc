@@ -15,6 +15,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'fugitive.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'prettier/vim-prettier'
 
 " Vundle Plugins END
 call vundle#end()
@@ -63,4 +64,7 @@ nmap <leader>f :NERDTree<CR>
 
 syntax on
 
-colorscheme slate
+colorscheme elflord
+
+" Let CtrlP look at all files
+let g:ctrlp_max_files=0
