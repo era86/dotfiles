@@ -14,8 +14,6 @@ Plugin 'The-NERD-Commenter'
 Plugin 'mileszs/ack.vim'
 Plugin 'fugitive.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'prettier/vim-prettier'
 
 " Vundle Plugins END
 call vundle#end()
@@ -62,9 +60,11 @@ set relativenumber
 " shortcut to open Nerdtree
 nmap <leader>f :NERDTree<CR>
 
+set t_Co=256
+
 syntax on
+colorscheme tokyo-metro
 
-colorscheme elflord
+let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 
-" Let CtrlP look at all files
-let g:ctrlp_max_files=0
+set colorcolumn=80
