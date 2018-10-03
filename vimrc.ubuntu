@@ -55,8 +55,7 @@ nmap <leader>h :nohl<CR>
 nmap <leader>t :CtrlP<CR>
 
 " setting relative line-numbers
-set relativenumber
-set number
+set number relativenumber
 
 " shortcut to open Nerdtree
 nmap <leader>f :NERDTree<CR>
