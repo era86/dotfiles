@@ -63,7 +63,6 @@ nmap <leader>f :NERDTree<CR>
 set t_Co=256
 
 syntax on
-colorscheme tokyo-metro
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 
