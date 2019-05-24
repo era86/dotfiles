@@ -16,6 +16,7 @@ Plugin 'fugitive.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
 
 " Vundle Plugins END
 call vundle#end()
@@ -62,6 +63,8 @@ set number
 
 " shortcut to open Nerdtree
 nmap <leader>f :NERDTree<CR>
+" shortcut to show file in Nerdtree
+nmap <leader>s :NERDTreeFind<CR>
 
 set t_Co=256
 
