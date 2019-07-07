@@ -61,6 +61,8 @@ set number relativenumber
 
 " shortcut to open Nerdtree
 nmap <leader>f :NERDTree<CR>
+" shortcut to show file in Nerdtree
+nmap <leader>s :NERDTreeFind<CR>
 
 set t_Co=256
 
