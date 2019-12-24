@@ -72,3 +72,5 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 
 set colorcolumn=80
 colorscheme lucius
+
+highlight ColorColumn ctermbg=238
