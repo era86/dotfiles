@@ -1,3 +1,5 @@
+set-option -g default-shell "/bin/bash"
+
 set -g prefix C-f
 
 # smart pane switching with awareness of vim splits
