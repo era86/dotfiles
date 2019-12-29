@@ -121,6 +121,6 @@ alias update_system="sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-g
 alias dc="docker-compose"
 
 # set the trackpoint speed
-xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 1, 0
-xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.7
-xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Natural Scrolling Enabled" 1
+#xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 1, 0
+#xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.7
+#xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Natural Scrolling Enabled" 1
