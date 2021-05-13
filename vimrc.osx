@@ -17,6 +17,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " Vundle Plugins END
 call vundle#end()
@@ -83,3 +85,6 @@ set colorcolumn=80
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" disable folding in Vim-markdown
+let g:vim_markdown_folding_disabled = 1
