@@ -71,7 +71,6 @@ nmap <leader>s :NERDTreeFind<CR>
 set t_Co=256
 
 syntax on
-colorscheme tokyo-metro
 
 " brew install fd - before using these
 let g:ctrlp_user_command = 'fd --type f --color=never "" %s'
@@ -81,6 +80,7 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 
 set colorcolumn=80
+colorscheme simple-dark
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -88,3 +88,5 @@ endif
 
 " disable folding in Vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+set tags=./tags,tags;

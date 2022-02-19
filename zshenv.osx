@@ -1,0 +1,8 @@
+# awscli
+export PATH="/Users/fancheta/Library/Python/3.9/bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# awsume
+alias awsume='. awsume'
