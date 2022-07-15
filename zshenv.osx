@@ -1,3 +1,5 @@
+export PATH=/usr/local/bin:$PATH
+
 # awscli
 export PATH="/Users/fancheta/Library/Python/3.9/bin:$PATH"
 
