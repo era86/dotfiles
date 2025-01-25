@@ -8,3 +8,4 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # awsume
 alias awsume='. awsume'
+. "$HOME/.cargo/env"

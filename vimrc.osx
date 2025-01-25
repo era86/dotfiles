@@ -19,6 +19,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'elixir-editors/vim-elixir'
 
 " Vundle Plugins END
 call vundle#end()
@@ -89,4 +91,7 @@ endif
 " disable folding in Vim-markdown
 let g:vim_markdown_folding_disabled = 1
 
-set tags=./tags,tags;
+" Ruby highlight ARB
+au BufReadPost *.arb set syntax=ruby
+
+set tags=./tags,.tags;
