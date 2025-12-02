@@ -21,6 +21,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'github/copilot.vim'
 
 " Vundle Plugins END
 call vundle#end()
