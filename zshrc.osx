@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 # bundle open
-export BUNDLER_EDITOR=vim
+export BUNDLER_EDITOR=nvim
 
 # ctags generation
 ctags=/usr/local/bin/ctags
@@ -119,3 +119,8 @@ eval "$(rbenv init - zsh)"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+export EDITOR='nvim'
+alias vim='nvim'
+
+. "$HOME/.local/bin/env"
