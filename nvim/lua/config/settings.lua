@@ -58,7 +58,38 @@ vim.keymap.set("n", "<leader>W", "<C-w>=<CR>")
 -- telescope
 
 vim.keymap.set("n", "<leader>t", ":Telescope find_files<CR>")
-vim.keymap.set("n", "<leader>r", ":Telescope live_grep<CR>")
+-- live grep with rg args support: "search term" --iglob **/path/** or -t ruby
+vim.keymap.set("n", "<leader>r", function()
+  require('telescope').extensions.live_grep_args.live_grep_args()
+end)
+
+-- visual mode: grep selected text
+vim.keymap.set("v", "<leader>r", function()
+  -- yank selected text into register v
+  vim.cmd('noau normal! "vy"')
+  local selected = vim.fn.getreg('v')
+
+  require('telescope').extensions.live_grep_args.live_grep_args({
+    default_text = selected,
+  })
+end)
 
 -- disable mouse
 o.mouse = ""
+
+-- split borders (using thicker characters for visibility)
+vim.opt.fillchars = {
+  vert = "┃",
+  horiz = "━",
+  horizup = "┻",
+  horizdown = "┳",
+  vertleft = "┫",
+  vertright = "┣",
+  verthoriz = "╋",
+}
+
+-- Always show statusline to make horizontal splits visible
+o.laststatus = 2  -- Always show statusline for each window
+
+-- Use winbar as horizontal separator
+vim.opt.winbar = "%{repeat('━',winwidth(0))}"
